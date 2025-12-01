@@ -6,8 +6,10 @@ export const hello=inngest.createFunction(
     {event:"hello/h"},
     async({event,step})=>{
 
+        const data=event.data.data.value
+
         console.log("Ok");
-        return {hello:event.data}
+        return {data}
     }
     
 );

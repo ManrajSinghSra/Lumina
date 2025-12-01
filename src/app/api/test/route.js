@@ -6,7 +6,7 @@ export const POST=async(req)=>{
 
     await inngest.send({
         name:"hello/h",
-        data:{name:data}
+        data:{data}
     });
 
     return new Response("Event send");
